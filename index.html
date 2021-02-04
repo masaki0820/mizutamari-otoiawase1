@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d394222a97.js" crossorigin="anonymous"></script>
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="icon">mizutamari</div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">HOME</a></li>
+                <li><a href="#">新着情報</a></li>
+                <li><a href="#">会社概要</a></li>
+                <li><a href="#">通販サイト</a></li>
+                <li><a href="#">お問い合わせ</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    </header>
+    <main>
+        <div id="wrapper">
+        <div class="content">
+          <section>
+            <h2>お問い合わせ</h2>
+            <h3 class="m-h3">電話によるお問い合わせ</h3>
+            <br>
+            <div class="contact001">
+              <ul>
+                <li class="m-m">
+                  <a href="tel:03-6279-1940">
+                    TEL.047-465-8711
+                    <span>(平日10:00-19:00)</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            </section>
+            <section>
+              <h3 class="m-h3">お問い合わせフォーム</h3>
+              <span>※は必須項目です</span>
+              <hr>
+              <form action="#" method="post">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">※お名前（漢字）</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" required >
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">※お名前（フリガナ)</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" required >
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">※メールアドレス</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" required >
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">※電話番号（半角）</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" required >
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">※お問い合わせの種類</label>
+                <select class="form-select" aria-label="Default select example" required>
+                  <option selected>お選びください</option>
+                  <option value="1">内容について</option>
+                  <option value="2">内容について</option>
+                  <option value="3">内容について</option>
+                  <option value="4">内容について</option>
+                  <option value="5">その他</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">※お問い合わせの内容</label>
+                <div class="mb-3">
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                </div>
+              </div>
+              <p><input type="checkbox" name="riyu" value="1" checked="checked"><span>※個人情報保護方針を確認しました</span></p>
+              <br>
+              <div class="col-12">
+                <button class="btn btn-primary" type="submit">入力内容を確認する</button>
+              </div>
+              </form>
+            </section>
+            </div>
+    </main>
+    <footer>
+        <section class="f-menu">
+        <div class="f-t">
+        <ul class="f-b">
+          <li class="f-c"><a href="#">HOME</a></li>
+          <li class="f-c"><a href="#">新着情報</a></li>
+          <li class="f-c"><a href="#">会社概要</a></li>
+          <li class="f-c"><a href="#">通販サイト</a></li>
+          <li class="f-c"><a href="#">お問い合わせ</a></l>
+        </ul>
+        </div>
+        </section>
+        <p class="f-p">Copyright&copy; 食工房, All rights reserved.</p>
+      </footer>
+    
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('.menu-toggle').click(function(){
+            $('nav').toggleClass('active')
+        });
+    })
+    </script>
+    </div>
+</body>
+</html>
